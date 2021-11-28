@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Manish&amp;Garima</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo/logo.png" />
         <link
             rel="preload"
             href="/fonts/flor-font/Rochester-73E4.ttf"
