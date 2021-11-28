@@ -2,8 +2,22 @@ import CarouselComponent from '../CarouselComponent';
 import Timmer from '../Timmer/Timmer';
 import WeddingLocation from '../WeddingLocation/WeddingLocation';
 import styles from './Parallax.module.scss';
-
+import { useState, useEffect } from 'react';
+import Invitation from '../Invitation';
 function Parallax() {
+
+    const [images, setImages] = useState();
+
+    useEffect(() => {
+        setImages(
+            Array.from(Array(9).keys()).map((id) => ({
+                id,
+                url: `../../../images/gallery/${id+1}.jpg`
+            }))
+        );
+    }, []);
+
+
     return (
         <div className={styles.container}>
             <div id="our_story" className={`${styles.section} ${styles.bg1}`} >
@@ -21,7 +35,7 @@ function Parallax() {
                             <h1 className={styles.large}>Manish </h1>
                         </div>
                         <p>ARE GETTING MARRIED</p>
-                        
+
                     </div>
                 </div>
                 <div className={styles.timmerFixed}>
@@ -33,10 +47,10 @@ function Parallax() {
                     <WeddingLocation />
                 </div>
             </div>
-            <div id="gallary" className={styles.section}>
-            
+            <div id="gallary" className={`${styles.section} ${styles.bg3}`}>
+                <div className={styles.blur}></div>
                 <div className={styles.fixed}>
-                <CarouselComponent />
+                    <CarouselComponent images={images} />
                 </div>
             </div>
             {/* <div className={styles.section}>
@@ -58,7 +72,10 @@ function Parallax() {
                 <div className={styles.fixed}>The day she passed away and as her body was being carried in a “Hearse” van there were unexpected showers for few minutes as if the heavens have cried for her, as she forgot to cry.</div>
             </div> */}
             <div className={styles.section}>
-                <p className={styles.fixed}>Thanks for watching</p>
+                <Invitation />
+                <div>
+                    
+                </div>
             </div>
         </div>
     )

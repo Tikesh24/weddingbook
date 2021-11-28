@@ -1,17 +1,11 @@
-import styles from './Card.module.scss';
+import React from "react";
+import sytle from './Card.module.scss';
 
-const Card = ({ children, className, ...rest }) => {
-  let cardClassName = styles.card;
-
-  if ( className ) {
-    cardClassName = `${cardClassName} ${className}`;
-  }
-
+const Card = ({ url }) => {
   return (
-    <div {...rest} className={cardClassName} >
-      { children }
+    <div className={sytle.card} style={{backgroundImage: `url(${url})` }}>
     </div>
-  )
-}
+  );
+};
 
 export default Card;

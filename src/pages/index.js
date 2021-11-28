@@ -1,10 +1,6 @@
 import Head from 'next/head'
 
 import Container from '../components/Container';
-import Main from '../components/Main';
-import Footer from '../components/Footer';
-import Grid from '../components/Grid';
-import Card from '../components/Card';
 import Nav from '../components/Nav';
 import Parallax from '../components/Parallax/Parallax';
 
@@ -29,6 +25,7 @@ export default function Home() {
       <div style={{position:'relative'}}>
         <Nav />
         <Parallax />
+        
         <Container>
         </Container>
       </div>
