@@ -1,0 +1,51 @@
+.container {
+    .title {
+        font-family: Rochester-73E4;
+        font-size: x-large;
+        letter-spacing: 20px;
+        color: #0c6668;
+    }
+    h1 {
+        margin: 0.3em;
+    }
+    .content {
+        h1 {
+            color: #55575e;
+        }
+        p {
+            margin: 0.3em;
+        }
+        h4 {
+            margin: 0.2em;
+            color:#58636c;
+        }
+
+        .brline {
+            height: 1px;
+            background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+            width: 40%;
+            margin: 1.4em auto;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .title {
+            font-size: large;
+            letter-spacing: 8px;
+        }
+
+        .content {
+            h1 {
+                font-size: large;
+                letter-spacing: 8px;
+            }
+            p {
+                margin: 0.3em;
+                font-size: small;
+            }
+            h4 {
+                margin: 0.2em;
+            }
+        }
+    }
+}

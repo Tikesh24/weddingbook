@@ -1,0 +1,66 @@
+.countdownTimer {
+    display: flex;
+    justify-content: center;
+    .counterbox {
+        width: 6rem;
+        border: 1px solid salmon;
+        padding: 9px 0px 0px 0px;
+        border-radius: 60px;
+        height: 6rem;
+        background-color: salmon;
+        margin: 0px 4px;
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .smallText {
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: normal;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .counterbox {
+            width: 4.5rem;
+            border: 0px solid salmon;
+            padding: 9px 0px 0px 0px;
+            height: 4rem;
+            background-color: transparent;
+            margin: 0px 4px;
+            border-radius: 0px;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 280px) {
+        .counterbox {
+            width: 4.5rem;
+            border: 0px solid salmon;
+            padding: 9px 0px 0px 0px;
+            height: 4rem;
+            background-color: transparent;
+            margin: 0px 4px;
+            border-radius: 0px;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

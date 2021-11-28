@@ -1,0 +1,67 @@
+.container{
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 4rem;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: -webkit-fill-available;
+    background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+    h1{
+        margin: 0;
+       
+    }
+
+    .title{
+        font-family: sans-serif;
+        // padding: 6px 0px 0px 10px;
+        .logo{
+            width: 5rem;
+            height: 3rem;
+        }
+    }
+
+    .listContainer{
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+          }
+    }
+
+    .blur {
+        background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+        backdrop-filter: blur(4px); // This be the blur
+        height: 100vh;
+        
+      }
+    
+    @media screen and (max-width: 450px) {
+        .listContainer {
+            display: none;
+        }
+
+        .title{
+            margin:auto;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,21 @@
+import styles from './Nav.module.scss';
+
+function Nav() {
+    return (
+        <div className={styles.container}>
+            <div className={styles.title}>
+                <img className={styles.logo} src="../../../images/logo/logo.png" /> 
+            </div>
+            <div className={styles.listContainer}>
+                <ul>
+                    <li><a href="#our_story">Our Story</a></li>
+                    <li><a href="#function">Where &amp; When</a></li>
+                    <li><a href="#gallary">Gallary</a></li>
+                </ul>
+            </div>
+            <div />
+        </div>
+    )
+}
+
+export default Nav
