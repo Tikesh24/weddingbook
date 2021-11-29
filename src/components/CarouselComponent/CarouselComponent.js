@@ -4,16 +4,16 @@ import Card from "./../Card/Card";
 import style from "./CarouselComponent.module.scss";
 
 const CardArray = [
-    { url: "../../../images/gallery/1.jpg" },
-    { url: "../../../images/gallery/2.jpg" },
-    { url: "../../../images/gallery/3.jpg" },
-    { url: "../../../images/gallery/4.jpg" },
-    { url: "../../../images/gallery/5.jpg" },
-    { url: "../../../images/gallery/6.jpg" },
-    { url: "../../../images/gallery/7.jpg" },
-    { url: "../../../images/gallery/8.jpg" },
-    { url: "../../../images/gallery/9.jpg" },
-    { url: "../../../images/gallery/10.jpg" }
+    { url: "../../../images/gallery/1.JPG" },
+    { url: "../../../images/gallery/2.JPG" },
+    { url: "../../../images/gallery/3.JPG" },
+    { url: "../../../images/gallery/4.JPG" },
+    { url: "../../../images/gallery/5.JPG" },
+    { url: "../../../images/gallery/6.JPG" },
+    { url: "../../../images/gallery/7.JPG" },
+    { url: "../../../images/gallery/8.JPG" },
+    { url: "../../../images/gallery/9.JPG" },
+    { url: "../../../images/gallery/10.JPG" }
   ];
 
 const CarouselComponent = () => {
