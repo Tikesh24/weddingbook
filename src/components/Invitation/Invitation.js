@@ -4,6 +4,7 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import {FaMailBulk} from 'react-icons/fa';
+import {FaMap} from 'react-icons/fa';
 function Invitation() {
     return (
         <div className={styles.container}>
