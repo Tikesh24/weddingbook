@@ -9,8 +9,8 @@ function Nav() {
             <div className={styles.listContainer}>
                 <ul>
                     <li><a href="#our_story">Our Story</a></li>
-                    <li><a href="#function">Where &amp; When</a></li>
-                    <li><a href="#gallary">Gallary</a></li>
+                    <li><a href="#function">When &amp; Where</a></li>
+                    <li><a href="#gallary">Gallery</a></li>
                 </ul>
             </div>
             <div />
